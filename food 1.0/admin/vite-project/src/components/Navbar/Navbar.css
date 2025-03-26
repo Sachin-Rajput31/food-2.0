@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,80px);
+
+}
+.navbar p{
+  position: relative;
+  right: 49%;
+  font-weight: 600;
+  top: 17px;
+  font-size: small;
+  color: rgb(199, 56, 183);
+
+}
+
+.navbar .profile{
+    width: 40px;
+}

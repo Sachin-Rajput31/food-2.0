@@ -1,0 +1,105 @@
+.header{
+    height: 34vw;
+    margin : 30px auto;
+    
+    background-size: 100% 100%;
+    background-size: contain;
+    position: relative;
+   
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1.6vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 5s ;
+}
+.header-contents h2{
+    font-weight: 600;
+    color:white;
+    font-size: max(4.5vw,22px);
+
+
+}
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+
+}
+.header-contents button{
+    border: none;
+    color:#747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: greenyellow;
+
+    font-size: max(1vw,13px);
+    border-radius: 40px;
+}
+@media (max-width:1050px){
+
+.header-contents{
+    max-width: 45%;
+}
+
+}
+@media (max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+
+    }
+    .header-contents p{
+        display: none;
+
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+
+}
+.orange-gradient-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 50px;
+    font-weight: bolder;
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(20px, 6vw, 58px); 
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 90vw;
+}
+
+@media (max-width: 768px) { 
+    .orange-gradient-text {
+        font-size: clamp(18px, 5vw, 48px); 
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 480px) { 
+    .orange-gradient-text {
+        padding-bottom: 11px;
+        font-size: clamp(16px, 4vw, 36px); 
+        max-width: 80vw;
+    }
+}
+@media (max-width: 1080px) { 
+    .orange-gradient-text {
+        font-size: clamp(20px, 6vw, 48px); 
+        max-width: 87vw;
+    }
+}
+
+
+
+
+    
