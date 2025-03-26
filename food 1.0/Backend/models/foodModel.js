@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import foodRouter from "../routes/foodRoutes.js";
+
 
 
 const foodSchema = new mongoose.Schema({
