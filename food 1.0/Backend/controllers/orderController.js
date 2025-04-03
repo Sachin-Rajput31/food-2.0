@@ -8,7 +8,7 @@ dotenv.config();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173";
+  const frontend_url = "https://foodie-frontend-nl1m.onrender.com";
 
   // Destructure the incoming request body
   const { userId, items, amount, address } = req.body;
